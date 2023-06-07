@@ -15,7 +15,7 @@ terraform {
 }
 module "resource_group" {
   #source               = "../../modules/resource_group"
-  source               = "modules/resource_group"
+  source               = "Lesson 2: Creating and Deploying Azure Cloud Infrastructure/Exercise: Create Azure AppService with Terraform/terraform/modules/resource_group"
   resource_group       = "${var.resource_group}"
   location             = "${var.location}"
 }
