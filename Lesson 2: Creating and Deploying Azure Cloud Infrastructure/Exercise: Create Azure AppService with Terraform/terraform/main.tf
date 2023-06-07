@@ -22,7 +22,8 @@ module "resource_group" {
 
   # Reference the AppService Module here.
   module "appservice" {
-  source           = "../../modules/appservice"
+  #source           = "../../modules/appservice"
+  #source           = "./modules/appservice"
   location         = "${var.location}"
   application_type = "${var.application_type}"
   resource_type    = "AppService"
