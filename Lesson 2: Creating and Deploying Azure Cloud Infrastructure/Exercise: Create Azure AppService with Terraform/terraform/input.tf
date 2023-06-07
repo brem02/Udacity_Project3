@@ -8,6 +8,7 @@ variable "tenant_id" {}
 variable "location" {}
 variable "resource_group" {}
 variable "application_type" {}
+
 # Tags
 variable tier {}
 variable deployment {}
