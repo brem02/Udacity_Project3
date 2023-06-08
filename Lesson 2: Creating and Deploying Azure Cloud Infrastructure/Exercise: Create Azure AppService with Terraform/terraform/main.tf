@@ -13,6 +13,14 @@ terraform {
     access_key           = "Gfp3m5z7LPpoYuYBBk4nHPyhB2tfD3WBCjjPycsx7Iv1WIXGO9miVV8mao9GZ9fGMhXu2Z7Bs7UA+AStevkd+g=="
   }
 }
+
+locals {
+  tags = {
+    tier        = "${var.tier}"
+    deployment  = "${var.deployment}"
+  }
+}
+
 module "resource_group" {
   #source               = "../../modules/resource_group"
   source               = "./modules/resource_group"
