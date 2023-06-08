@@ -28,5 +28,5 @@ module "resource_group" {
   application_type = "${var.application_type}"
   resource_type    = "AppService"
   resource_group   = "${module.resource_group.resource_group_name}"
-  tags             = "${local.tags}"
+  #tags             = "${local.tags}"
 }
