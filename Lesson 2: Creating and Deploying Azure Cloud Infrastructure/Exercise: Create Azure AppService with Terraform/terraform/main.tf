@@ -7,10 +7,10 @@ provider "azurerm" {
 }
 terraform {
   backend "azurerm" {
-    storage_account_name = "storage235262"
+    storage_account_name = "storage235285"
     container_name       = "mycontainer"
-    key                  = "MJJvSXQrPHriJZyq5n6hZPppMSgGjhP6Zhd0EYtIvC84A/zMZF3Z1dnhKN6vz24/o6tXY08jv7L8+AStQhaZcw=="
-    access_key           = "MJJvSXQrPHriJZyq5n6hZPppMSgGjhP6Zhd0EYtIvC84A/zMZF3Z1dnhKN6vz24/o6tXY08jv7L8+AStQhaZcw=="
+    key                  = "Gfp3m5z7LPpoYuYBBk4nHPyhB2tfD3WBCjjPycsx7Iv1WIXGO9miVV8mao9GZ9fGMhXu2Z7Bs7UA+AStevkd+g=="
+    access_key           = "Gfp3m5z7LPpoYuYBBk4nHPyhB2tfD3WBCjjPycsx7Iv1WIXGO9miVV8mao9GZ9fGMhXu2Z7Bs7UA+AStevkd+g=="
   }
 }
 module "resource_group" {
@@ -23,7 +23,7 @@ module "resource_group" {
   # Reference the AppService Module here.
   module "appservice" {
   #source           = "../../modules/appservice"
-  source           = ".//modules/appservice"
+  source           = "./modules/appservice"
   location         = "${var.location}"
   application_type = "${var.application_type}"
   resource_type    = "AppService"
