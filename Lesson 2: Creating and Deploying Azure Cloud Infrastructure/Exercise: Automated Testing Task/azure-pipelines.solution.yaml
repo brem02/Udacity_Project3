@@ -11,7 +11,7 @@ stages:
     - task: CmdLine@2
       displayName: Install Newman
       inputs:
-        script: 'sudo npm install -g newman'
+        script: 'apt-get install -y npm'
         workingDirectory: $(System.DefaultWorkingDirectory)
     - task: CmdLine@2
       displayName: Run Regression Tests
