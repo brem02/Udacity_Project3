@@ -19,7 +19,6 @@ stages:
         script: |
           echo  '$(System.DefaultWorkingDirectory)'
           dir
-          dir subfoldername
     - task: CmdLine@2
       displayName: Run Regression Tests
       continueOnError: true
