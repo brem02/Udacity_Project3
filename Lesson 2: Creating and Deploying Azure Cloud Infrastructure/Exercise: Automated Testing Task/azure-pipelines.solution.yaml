@@ -14,6 +14,13 @@ stages:
         script: 'sudo npm install -g newman'
         workingDirectory: $(System.DefaultWorkingDirectory)
     - task: CmdLine@2
+      displayName: Get Directory
+      inputs:
+        script: |
+          echo  '$(System.DefaultWorkingDirectory)'
+          dir
+          dir subfoldername
+    - task: CmdLine@2
       displayName: Run Regression Tests
       continueOnError: true
       inputs:
