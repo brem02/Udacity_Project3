@@ -18,4 +18,4 @@ stages:
       continueOnError: true
       inputs:
         script: 'newman run starterapis.json'
-        workingDirectory: 'starter-code/automatedtesting/postman'
+        workingDirectory: $(System.DefaultWorkingDirectory)
