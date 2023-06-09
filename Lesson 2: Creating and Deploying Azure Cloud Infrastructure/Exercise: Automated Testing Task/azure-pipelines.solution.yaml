@@ -18,4 +18,4 @@ stages:
       continueOnError: true
       inputs:
         script: 'newman run starterapis.json'
-        workingDirectory: "Udacity_Project3/Lesson2:Creating and Deploying Azure Cloud Infrastructure/Exercise: Automated Testing Task"
+        workingDirectory: 'Udacity_Project3/"Lesson 2: Creating and Deploying Azure Cloud Infrastructure"/"Exercise: Automated Testing Task"'
