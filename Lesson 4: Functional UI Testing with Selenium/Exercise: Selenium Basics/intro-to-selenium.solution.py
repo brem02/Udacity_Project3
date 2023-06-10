@@ -1,8 +1,8 @@
 # #!/usr/bin/env python
 from selenium import webdriver
 
-# Start the browser and navigate to http://automationpractice.com/index.php.
+# Start the browser and navigate to https://magento.softwaretestingboard.com/.
 driver = webdriver.Chrome()
-driver.get('http://automationpractice.com/index.php')
+driver.get('https://magento.softwaretestingboard.com/')
 
 
